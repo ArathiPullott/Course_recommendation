@@ -1,0 +1,23 @@
+<!-- search_results.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% if results %}
+        <h2>Available Courses:</h2>
+        <ul>
+        {% for result in results %}
+            <li>{{ result.0 }} - <a href="{{ result.1 }}">{{ result.1 }}</a> - Price: ${{ result.2 }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</body>
+</html>

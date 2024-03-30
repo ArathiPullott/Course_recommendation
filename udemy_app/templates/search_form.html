@@ -1,0 +1,22 @@
+<!-- search_form.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>UDEMY COURSES : EXPLORE ONLINE EDUCATION</h1>
+    <!-- Image -->
+    <!-- <img src="{% static 'images/pic.png' %}" alt="Example Image"> -->
+    <form method="post">
+        {% csrf_token %}
+        <label for="subject">Enter subject:</label>
+        <input type="text" name="subject" id="subject">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

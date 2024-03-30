@@ -1,0 +1,83 @@
+body {
+    font-family: 'Helvetica Bold', Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/images/pic.png');
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-position: center; */
+    background-position: inherit;
+    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+}
+
+/* Header styles */
+header {
+    background-color: #a5a8aa;
+    color: #390e24;
+    padding: 10px;
+    text-align: center;
+}
+h1,h2 {
+    background-color: #b5c6c9;
+    color: #420734;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    margin: 20px auto;
+    width: 300px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #d7e207;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b83064;
+}
+
+/* Search results styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+li a {
+    color: #0c7666;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
